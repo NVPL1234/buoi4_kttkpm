@@ -31,4 +31,9 @@ public class MayBayController {
 	public List<MayBay> getMBBayCBVN280(){
 		return mayBayService.getMBBayCBVN280();
 	}
+	
+	@GetMapping("/getTongNVMoiLoaiMB")
+	public List<Object> getTongNVMoiLoaiMB(){
+		return mayBayService.getTongNVMoiLoaiMB();
+	}
 }

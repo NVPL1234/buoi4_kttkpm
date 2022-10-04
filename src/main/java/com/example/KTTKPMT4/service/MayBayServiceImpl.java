@@ -28,6 +28,11 @@ public class MayBayServiceImpl implements MayBayService{
 	public List<MayBay> getMBBayCBVN280() {
 		return mayBayRepository.getMBBayCBVN280();
 	}
+
+	@Override
+	public List<Object> getTongNVMoiLoaiMB() {
+		return mayBayRepository.getTongNVMoiLoaiMB();
+	}
 	
 	
 }

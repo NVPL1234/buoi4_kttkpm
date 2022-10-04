@@ -39,4 +39,24 @@ public class ChuyenBayServiceImpl implements ChuyenBayService{
 	public List<ChuyenBay> getCBMBAirbusA320BayDuoc() {
 		return chuyenBayRepository.getCBMBAirbusA320BayDuoc();
 	}
+
+	@Override
+	public int getTongChuyenBayCuaGaDi(String gaDi) {
+		return chuyenBayRepository.getTongChuyenBayCuaGaDi(gaDi);
+	}
+
+	@Override
+	public double getTongChiPhiCuaCBOGaDi(String gaDi) {
+		return chuyenBayRepository.getTongChiPhiCuaCBOGaDi(gaDi);
+	}
+
+	@Override
+	public List<ChuyenBay> getCBDiTruoc12h() {
+		return chuyenBayRepository.getCBDiTruoc12h();
+	}
+
+	@Override
+	public int getTongCBDiTruoc12hO(String gaDi) {
+		return chuyenBayRepository.getTongCBDiTruoc12hO(gaDi);
+	}
 }
